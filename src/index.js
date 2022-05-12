@@ -28,7 +28,7 @@ function BookList() {
     <section className="booklist">
       {/*  map always return an Array and it dosn't change the size of orignal array (unlike filters) */}
       {books.map((book) => {
-        return <Book key={book.id} book={book} />;
+        return <Book key={book.id} {...book} />; // => spread opratotor spread all prpperties of object in an array
         // key/ref prop is a react requerment in map function for hint
       })}
     </section>
@@ -37,7 +37,7 @@ function BookList() {
 
 const Book = (props) => {
   //alias is used in props destructring
-  const { img: image, title, author } = props.book; //destructing on onbject type props (props.book) it could be solved with Spred oprator
+  const { img: image, title, author } = props; // we don't need this syntex any more  as it spred all properties (props.book)
   return (
     <article className="book">
       <img src={image} alt="" />
