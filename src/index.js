@@ -35,14 +35,36 @@ function BookList() {
   );
 }
 
-const Book = (props) => {
-  //alias is used in props destructring
-  const { img: image, title, author } = props; // we don't need this syntex any more  as it spred all properties (props.book)
+const Book = ({ img: image, title, author }) => {
+  //event => Event atribute (onclick), eventHandler Function
+  const clickHandler = (e) => {
+    console.log(e); //click properties
+    console.log(e.target); //what is click. data of button
+    console.log("Click Me Button");
+  };
+
+  const complexClickHandler = (auther) => {
+    console.log(author);
+  };
   return (
-    <article className="book">
+    //atribute and handler in single line
+    <article
+      className="book"
+      onMouseOver={() => {
+        console.log(title);
+      }}
+    >
       <img src={image} alt="" />
-      <h1>{title}</h1>
+      {/* in this errow function we are call title property in console log */}
+      <h1 onClick={() => console.log(title)}>{title}</h1>
       <h4>{author}</h4>
+      <button type="button" onClick={clickHandler}>
+        Click Me!
+      </button>
+      {/* it will call automatically if we don't call it in errow function  */}
+      <button type="button" onClick={() => complexClickHandler(author)}>
+        Complex button
+      </button>
     </article>
   );
 };
