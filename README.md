@@ -50,55 +50,100 @@ li:nth-chlid(even)
 
 git comands
 
-pwd => full path-Name to current working directory
+pwd => full path-Name to current working directory.
+
 ls => list of directories / folders
+
 dir => for directories
+
 cd .. => change directory and move one step in folder
+
 D: => for goto D drive
+
 cd Users => for goto users folder
+
 cd / => for root folder direct
+
 cd C:\Users\Adil\Music => for directly go to music folder in c drive
+
 cls => for clearing the cmd
+
 mkdir folder-Name => for new folder creation
+
 mkdir folder Name => it will creat 2 folders named folder and name
+
 tab => for auto complition of the name of the folde you are typing
+
 echo contet of file and things to show as content >
+
 file-name.txt => for creating new file named file-name of type txt with content
+
 type file-name => to see what is in side the file
+
 del file-name => for deleting a file
+
 rmdir folder-name => for deleting a folder
+
 git config --global --edit => to check the current user and email. to exit that manu press :x
+
 git config --global user.email "aadilasadhatti@gmail.com" => for adding email
+
 git config --global user.name "Adil Asad" => for adding name to git
+
 git --version => for check the version and to check if git is installed)
+
 git init => for intialize the git reposetory //Start // first step
+
 git status => to check weather any commit is made.
+
 git log => to see all the commits on that branch. to quit log press (q)
+
 git branch -m newName ( to change the branch name. by default its name is master
+
 git add fileName.txt => for start trecking the changes in the file.
+
 git add . => to add all newly created files at once
+
 git commit -m "comments for future that what you have did in past"
-git commit -am "commit message" => it adds an commit at once. but it only works if you did't created new fil
+
+git commit -am "commit message" => it adds an commit at once. but it only works if you did't created
+new fil
+
 git branch => to check your current branch. and to watch how many branches
-git checkout -b features => it will create a new copy of your current brench. in my case master branch. it will not effect mater
+
+git checkout -b features => it will create a new copy of your current brench. in my case master
+
+branch. it will not effect mater
+
 branch but will have the same commits as master
+
 git checkout 87yy78g8g => watch commit number in git log and paste to go some other commit
+
 git checkout master => to switch the branch
-git merge features => it will merge features branch into your current branch. in this case current is master. we will
-confirm this by looking in logs
-if we update in 2 different branches and merge them it will rase conflicts. which will removed by accepting current or incoming updates
+
+git merge features => it will merge features branch into your current branch. in this case current is
+master. we will confirm this by looking in logs. if we update in 2 different branches and merge them it will rase conflicts. which will removed by accepting current or incoming updates
+
 git rm fileName.txt => to delete a specfic file (cd deleting-data (first change the directory) after that add and commit to save changes
+
 git reset --hard Head~1 => reverse/delete 1 last commit after ~ if write ~3 it will bring us back to 3 steps.
+
 git branch -D features => it will delete features branch
+
 git checkout -- . => it will remove all unstaged changes
+
 git checkout -- fileName.txt => it will remove all unstaged changes in fileName.txt)
+
 git reset file1.txt => it will turn file1.txt into unstaged file, and then above step)
+
 git commit --amend -m "message" => change last commit message
 
 Git Hub
 
 git remote add origin https://github.com/adiadds/web-dev.git
+
 git branch -M main ( to change the name of master branch to main)
+
 git push origin main
 
 to remove your Credetials
@@ -108,9 +153,12 @@ Clone
 git clone https://github.com/adiadds/web-dev.git . (you must add full stop at the end) (git clone URL .)
 
 private reposetrires could be seen in which you are a colaborator under setting>reposetries>
+
 git pull -- to download updates made by others on git hub
 to contribute fork>clone>push>pull request
+
 fork -- You can fork a pulic project in which you are not a colaborator. then you download it by clone. then add features and
+
 push it in your forked file. then request the owner of the file by pull request.
 
 ---
